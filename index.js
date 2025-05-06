@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // --- Keep-Alive Logic for the PDF Query Backend ---
 const PDF_QUERY_BACKEND_URL_TO_PING = process.env.PDF_QUERY_BACKEND_URL_TO_PING;
-const KEEP_ALIVE_INTERVAL_MS = 14 * 60 * 1000;
+const KEEP_ALIVE_INTERVAL_MS = 1 * 60 * 1000;
 
 function getFormattedLocalTime() {
   const now = new Date();
